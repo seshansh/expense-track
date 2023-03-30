@@ -1,0 +1,46 @@
+
+/* .filter-sec{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-sec p{
+    font-size: 1rem;
+    color: antiquewhite;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.select-year{
+    width: 10vw;
+    height: 5vh;
+    margin-right: 1.5rem;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    border-width: 0px;
+    text-align: center;
+    margin-top: auto;
+} */
+
+.expenses-filter {
+    color: white;
+    padding: 0 1rem;
+  }
+  
+  .expenses-filter__control {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  
+  .expenses-filter label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .expenses-filter select {
+    font: inherit;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    border-radius: 6px;
+  }
