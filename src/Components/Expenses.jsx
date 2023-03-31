@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Expenses.css';
 import ExpenseDetail from './ExpenseDetail';
 import ExpenseFilter from './ExpenseFilter';
+import ExpenseChart from './ExpenseChart';
 
 
 const Expenses=(props)=>{
@@ -20,7 +21,7 @@ const Expenses=(props)=>{
     function checkFilter(item){
         const newDate =new Date(item.date)
         if(!filterYear || filterYear==='All'){
-            return item
+            return item;
         }
         else if(newDate.getFullYear().toString()===filterYear){
             return item;
@@ -30,9 +31,10 @@ const Expenses=(props)=>{
 
     return(
         <div className='expenses-Details '>
-            <h2>sesa</h2>
+            {/* <h2>sesa</h2> */}
             <ExpenseFilter setFilterYear={setFilterYear} onSelectYear={filterYear}/>
-           {props.expenseList.length===0 ? <p className='no-data'>No Data Found!</p>
+            <ExpenseChart expenses={newArray} />
+           {newArray.length===0 ? <p className='no-data'>No Data Found!</p>
            : newArray.map((item,index)=>{
             return(
                 <ExpenseDetail description={item.description} amount={item.amount} date={item.date}

@@ -9,14 +9,14 @@ const Header=(props)=>{
     const [showAddForm, setShowAddForm]= useState(false);
 
     const handleAddClick=()=>{
-        setShowAddForm(true);
+        setShowAddForm(!showAddForm);
     }
 
     const addExpenseItem=(newItem)=>{
         props.addedItem(newItem);
     }
     return(
-         <div className="nav-main">
+         <div className="nav-main" >
             <RiHandCoinLine size={40} color="#F1D00A" className='coin'/>
             <h2>Expense Tracker</h2>
             <div className='add-section'>

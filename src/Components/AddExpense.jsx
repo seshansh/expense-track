@@ -51,8 +51,8 @@ const AddExpense=(props)=>{
                             onChange={(e)=>setItem({...item,date:e.target.value})}/>
                         </div>
                         <div className='new-expense__actions'>
-                        <button onClick={handleAddItem}>Add Expense</button>
-                        <button onClick={handleCancel}>Cancel</button>
+                        <button className='buttAdd' onClick={handleAddItem}>Add Expense</button>
+                        <button className='buttCan' onClick={handleCancel}>Cancel</button>
                         </div>
                     </div>
            

@@ -96,10 +96,46 @@
   
   .new-expense__actions {
     text-align: right;
-    padding: 3rem;
+    /* padding: 3rem; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: #502064; */
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    /* margin-right: 35rem; */
   }
   .amount-title{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+.new-expense__actions button{
+  margin: 5px 0px;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: green;
+  color: #ECF2FF;
+
+}
+
+.buttAdd{
+  margin: 5px 0px;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: green;
+  color: #ECF2FF;
+}
+
+
+.buttCan{
+  margin: 5px 0px;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: red;
+  color: #ECF2FF;
+}
+  
